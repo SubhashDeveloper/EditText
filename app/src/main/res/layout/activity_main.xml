@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    <com.mindorks.editdrawabletext.EditDrawableText
+        android:id="@+id/drawable_editText_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_action_name"
+        android:hint="Enter the password"
+        android:inputType="textPassword"
+
+        android:background="@drawable/sty2"
+        />
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/etPasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sty"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:maxLength="15"
+        android:maxLines="1"
+        android:id="@+id/edit_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the password"
+        android:inputType="textPassword"
+        android:backgroundTint="#979797"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="85dp" />
+    <EditText
+        android:layout_marginTop="50dp"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:id="@+id/edit_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the password"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="85dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_marginLeft="100dp"
+        android:text="sign in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</RelativeLayout>
